@@ -11,7 +11,7 @@ class Triangle
     if (s1 == s2 && s2 == s3)
       kind = :equilateral
     elsif (s1 + s2 < s3 || s2 + s3 < s1 || s1 + s3 < s2)
-      #error
+      raise TriangleError
     elsif (s1 == s2 || s2 == s3 || s1 == s3)
       kind = :isosceles
     else
