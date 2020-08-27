@@ -7,5 +7,5 @@ class Triangle
     @s3 = s3
   end
 
-  
+
 end
